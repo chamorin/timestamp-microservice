@@ -3,7 +3,7 @@ const express = require('express');
 const cors = require('cors');
 
 var app = module.exports = express();
-app.unsubscribe(bodyParser.json());
+app.use(bodyParser.json());
 app.use(cors());
 
 const dateFormating = {
